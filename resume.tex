@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome}
+\usepackage{academicons}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks,urlcolor=BlueViolet,linkcolor=BlueViolet}
+
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin = 0.15in, label={}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Gloria del Valle Cano} \\ \vspace{0.9em}
+    \href{tel:+34635886867}{\raisebox{-0.05\height}\faMobile\ } · \href{mailto:glorelvalle@gmail.com}{\raisebox{-0.05\height}\faEnvelope\ } ·
+    \href{https://github.com/glorelvalle}{\raisebox{-0.05\height}\faGithub\ } ·
+    \href{https://glorelvalle.github.io}{\raisebox{-0.05\height}\faGlobe\ } ·
+    \href{https://linkedin.com/in/glorelvalle}{\raisebox{-0.05\height}\faLinkedin\ } ·
+    \href{https://scholar.google.es/citations?user=qtELGLwAAAAJ&hl=es&oi=ao}{\faGraduationCap}
+\end{center}
+
+\vspace{0.1em}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Data Scientist \small @ \textit{Grupo TRC}}{ \small \textcolor{Gray}{09/2022 -- \textit{Present}}}{}{}
+        \small I designed Speech-to-Text and Text-to-Speech models (\emph{transformers}) for Interactive Voice Response systems. I also participated in the development of Computer Vision and biometrics models for a security project with drones.
+
+      \resumeSubheading
+      {\normalsize Research Assistant \small @ \textit{Autonomous University of Madrid}}{\small \textcolor{Gray}{01/2022 -- 09/2022}}
+        \scriptsize \textup{I designed and developed the main hate speech algorithm for the Spanish Government and created automatic processes for detecting hate patterns beyond social media. Part of \href{https://real-up.eu/summary-in-english/}{REAL-UP, Combating Hate Speech Project}, in collaboration with OBERAXE (State Secretariat for Migration).}
+      
+      \resumeSubheading
+      {R\&D Consultant Intern \small @ \textit{KPMG Spain}}{ \small \textcolor{Gray}{10/2019 -- 03/2020}}
+        \scriptsize \textup{Along with my colleagues, I participated in several AI projects where I explored ways to analyse and manipulate relevant financial information to support R\&D regimes.}
+    \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+    %\resumeSubHeadingListStart
+          \resumeItemListStart
+              \resumeItem{\href{https://doi.org/10.1016/j.eswa.2022.119446}{SocialHaterBERT: A dichotomous approach for automatically detecting hate speech on Twitter}{\hspace{8.26em} \textcolor{Gray}{2023}} \\ \href{https://doi.org/10.1016/j.eswa.2022.119446}{through textual analysis and user profiles.} \\ \scriptsize \textbf{Valle-Cano, G.} Quijano-Sánchez, L. Liberatore, F. \& Gómez, J. \textcolor{Gray}{Expert Systems With Applications (ESWA).}}
+              \resumeItem{\href{https://dialnet.unirioja.es/servlet/articulo?codigo=8653016}{Detecting Hate Messages on Twitter: A BERT-based Model for the Classification of Hate Speech in Spanish}{\hspace{3em}\textcolor{Gray}{2021}} \\ \scriptsize \textbf{Valle-Cano, G.} Quijano-Sánchez, L. \& Gómez, J. \textcolor{Gray}{Proceedings of the International Congress \emph{Hate and Discrimination in Turbulent Times}.}}
+          \resumeItemListEnd
+   % \resumeSubHeadingListEnd
+    
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MSc Data Science \small @ \textit{Autonomous University of Madrid}}{\small \textcolor{Gray}{09/2021 -- 06/2023}}{}{}
+      \small Studying Advanced Methods in Statistics, Stochastic Processes, Bayesian Methods and Functional Methods, inter alia.
+         
+        
+    \resumeSubheading
+      {\normalsize BSc Computer Science Engineering \small @ \textit{Autonomous University of Madrid}}{\small \textcolor{Gray}{09/2013 -- 06/2021}}{}{}
+      \small Studying solutions based on ML, Software Engineering, Database Fundamentals and Complex Algorithms, inter alia. \\ During my studies, I worked in part-time jobs as sales assistant (25-35 hours per week).
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/glorelvalle/socialhaterbert}{\textbf{SocialHaterBERT}} · \textbf{\textcolor{Gray}{\emph{Bachelor's Thesis}} · [Grade A]}}{\textcolor{Gray}{\small 09/2020 -- 06/2021}}
+          {\scriptsize \textup{A proposal for a combined \textbf{BERT-based model} for \textbf{hate speech detection}, capable of going further with the features lying in the text. I developed \textbf{NLP models} to make a user profile analysis, with its related social environment (\textbf{Graph Theory} and \textbf{Neo4j}) and generated tweets (\textbf{Twitter API}). Conducted in cooperation with the Spanish National Office Against Hate Crimes of the \textbf{Ministry of Interior}. \newline This gave me the opportunity to participate in \href{https://eucpn.org/service/bpc-ecpa}{European Crime Prevention Award and Best Practice Conference (BPC-ECPA)} where I was able to represent Spain with the \href{https://eucpn.org/document/socialhaterbert-automatic-detection-and-monitoring-of-hate-speech-on-twitter-through-a}{SocialHaterBERT project applied to cyberbullying.}}}{}
+    \resumeSubHeadingListEnd
+
+
+%-----------Courses-----------
+\section{Courses}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          %{\textbf{Reinforcement Learning Specialization (1/4)} · \emph{University of Alberta}}{ \hspace{10.6em} July 2022}\\
+          %\vspace{0.3em}
+          %{\textbf{IBM Data Science Professional Certificate (3/10)} · \emph{IBM}}{ \hspace{15.3em} July 2021}\\
+          %\vspace{0.3em}
+          %{\textbf{Python for Data Science} · \emph{Coursera Project Network}}{ \hspace{18.5em} July 2020}\\
+          %\vspace{0.3em}
+          {\textbf{\small Natural Language Processing} · \small \emph{National Research University Higher School of Economics }}{ \hspace{6.8em} \small \textcolor{Gray}{08/2019}} \\
+          \vspace{0.2em}
+          {\textbf{\small Applied Text Mining in Python} · \small \emph{University of Michigan}}{ \hspace{19.6em} \small \textcolor{Gray}{06/2019}}\\
+    \resumeSubHeadingListEnd
+    
+%-----------LANGUAGES-----------
+%\section{Languages}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%    \small{\item{
+%     \textbf{English}{: Advanced}\hspace{1em}
+%     \textbf{Spanish}{: Native}\hspace{1em}
+%     \textbf{French}{: Elementary} 
+%    }}
+% \end{itemize}
+
+
+%-------------------------------------------
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Advanced knowledge}{: Python, C, \LaTeX, SQL, Neo4j, NLP, Transformers, Neptune AI.} \\
+     \textbf{Intermediate knowledge}{: C++, R, Lisp, Java, Swift, HTML/CSS, JavaScript, MongoDB.} \\
+     \textbf{Languages}{: English (\textit{Advanced}), Spanish (\textit{Native}), French (\textit{Elementary})}.
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

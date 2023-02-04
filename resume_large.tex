@@ -1,0 +1,266 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Gloria del Valle Cano} \\ \vspace{0.9em}
+    \small +34 635 88 68 67 · \href{mailto:glorelvalle@gmail.com}{\textcolor{Periwinkle}{glorelvalle@gmail.com}} ·
+    %\href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
+    \href{https://github.com/glorelvalle}{\textcolor{BlueViolet}{github.com/glorelvalle}}
+\end{center}
+
+\vspace{0.5em}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MSc Data Science}{September 2021 -- \textit{Present}}
+      {Autonomous University of Madrid}{60/72 cts completed}
+      \resumeItemListStart
+        \resumeItem{Studying advanced methods in statistics and stochastic processes, inter alia.}
+        \resumeItem{Attending to elective courses such as Natural Language Processing, Deep Learning for Image and Video Classification, Bayesian Methods and Functional Methods in Machine Learning.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {BSc Computer Science Engineering}{September 2013 -- June 2021}
+      {Autonomous University of Madrid}{}
+      \resumeItemListStart
+      \resumeItem{Studying solutions based on AI, computer security, systems administration and Big Data.}
+      \resumeItem{Working in part-time jobs as sales assistant for more than 4 years (25-35 hours per week).}
+      \resumeItem{Thesis: \textit{Detecting hate messages on Twitter: a study based on perfles within the social network.} [\textbf{Grade A}].}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Data Scientist}{ September 2022 -- \textit{Present}}
+      {Grupo TRC}{Madrid, Spain}
+      \resumeItemListStart
+        \resumeItem{Design and implementation of speech-to-text and text-to-speech models in the Spanish language.}
+        \resumeItem{Participation in several AI projects from scratch, with topics such as computer vision and biometric speech recognition.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Research Assistant}{ January 2022 -- September 2022}
+      {Autonomous University of Madrid · OBERAXE (State Secretariat for Migration)}{Madrid, Spain}
+      \resumeItemListStart
+        \resumeItem{Part of \href{https://real-up.eu/summary-in-english/}{\textcolor{BlueViolet}{REAL-UP, Combating Hate Speech Project}} approved by the Citizens, Equality, Rights and Values Programme (CERV) of the European Commission under the Call: CERV-2021-EQUAL.}
+        \resumeItem{Design and implementation of the main hate speech algorithm for the improvement of an IT tool developed for the Spanish Government.}
+        \resumeItem{Creation of automatic processes for detecting hate speech beyond Twitter.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {R\&D Tax Consultant Intern}{October 2019 -- March 2020}
+      {KPMG Spain}{Madrid, Spain}
+      \resumeItemListStart
+        \resumeItem{Drafting scientific and technological descriptions of AI projects.}
+        \resumeItem{Automatizing spreadsheets for the value of claims, apportioned between the different R\&D regimes.}
+        \resumeItem{Explored ways to analyse and present relevant financial information to support R\&D tax credit claims.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/glorelvalle/socialhaterbert}{\textbf{SocialHaterBERT}} · \emph{Bachelor's Thesis}}{September 2020 -- June 2021}
+          \resumeItemListStart
+            \resumeItem{Main title of \textit{Detecting hate speech messages on Twitter: a study based on social network profiles.}}
+            \resumeItem{Conducted in cooperation with the Spanish National Office Against Hate Crimes of the Spanish State Secretariat for Security (Ministry of Interior).}
+            \resumeItem{Proposal for a novel NLP approach for feature analysis based on user profiles, related social environment and generated tweets.}
+            \resumeItem{Development of a combined BERT-based model capable of analyzing features beyond those intrinsically lie in the text for the detection of hate speech on Twitter.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------Courses-----------
+\section{Courses and Certificates}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {}{}\\
+          \vspace{-0.4em}
+          %{\textbf{Reinforcement Learning Specialization (1/4)} · \emph{University of Alberta}}{ \hspace{10.6em} July 2022}\\
+          %\vspace{0.3em}
+          {\textbf{IBM Data Science Professional Certificate (3/10)} · \emph{IBM}}{ \hspace{15.3em} July 2021}\\
+          \vspace{0.3em}
+          {\textbf{Python for Data Science} · \emph{Coursera Project Network}}{ \hspace{18.5em} July 2020}\\
+          \vspace{0.3em}
+          {\textbf{Natural Language Processing} · \emph{National Research University Higher School of Economics }}{ \hspace{0.5em} August 2019} \\
+          \vspace{0.3em}
+          {\textbf{Applied Text Mining in Python} · \emph{University of Michigan}}{ \hspace{16em} June 2019}\\
+  
+          
+          
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Publications}
+    \resumeSubHeadingListStart
+          \resumeItemListStart
+              \resumeItem{Valle-Cano, G. \& Quijano-Sánchez \& Liberatore F., L.\& Gómez, J., \emph{SocialHaterBERT: A dichotomous approach for automatically detecting hate speech on Twitter through textual analysis and user profiles} in Expert Systems With Applications (ESWA), Volume 216, 2023, \href{https://doi.org/10.1016/j.eswa.2022.119446}{https://doi.org/10.1016/j.eswa.2022.119446}.}
+              \resumeItem{del Valle, G. \& Quijano-Sánchez, L.\& Gómez, J., \emph{Detecting Hate Messages on Twitter: A BERT-based Model for the Classification of Hate Speech in Spanish}, in Proceedings of International Congress "Hate and Discrimination in turbulent times", 2021, Málaga, Spain.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%%-----------PROJECTS-----------
+\section{Awards and achievements}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\textbf{Finalist at European Crime Prevention Award and Best Practice Conference (\textcolor{BlueViolet}{\href{https://eucpn.org/service/bpc-ecpa}{BPC-ECPA})} }}{October 2021}
+      
+      \resumeItemListStart
+        \resumeItem{Entry: \textcolor{BlueViolet}{\href{https://eucpn.org/document/socialhaterbert-automatic-detection-and-monitoring-of-hate-speech-on-twitter-through-a}{SocialHaterBERT: automatic detection and monitoring of hate speech on Twitter through a dichotomous approach based on textual analysis and user profiles.}}}
+        \resumeItem{Winner of the internal selection process in Spain.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}{: Advanced}\hspace{1em}
+     \textbf{Spanish}{: Native}\hspace{1em}
+     \textbf{French}{: Elementary} 
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Advanced knowledge}{: Python, C, \LaTeX, SQL, Neo4j, NLP Transformers.} \\
+     \textbf{Intermediate knowledge}{: C++, R, Lisp, Java, Swift, HTML/CSS, JavaScript, MongoDB.}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
